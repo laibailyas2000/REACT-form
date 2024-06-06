@@ -7,7 +7,6 @@ import UserTable from "./Components/userTable";
 
 function App() {
   const [users, setUsers] = useState([]);
-
   useEffect(() => {
     fetchUsers();
   }, []);

@@ -10,7 +10,6 @@ const LoginForm = () => {
     password: "",
     remember: false,
   });
-
   const handleChange = (e) => {
     const { name, value, type, checked } = e.target;
     setLoginData({

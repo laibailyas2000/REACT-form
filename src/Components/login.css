@@ -3,7 +3,6 @@
 body {
   height: 100vh;
   display: flex;
-
   background-image: url("1000_F_119115529_mEnw3lGpLdlDkfLgRcVSbFRuVl6sMDty.jpg");
   background-size: cover; /* Ensure the image covers the entire background */
   background-position: center; /* Center the image */
