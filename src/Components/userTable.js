@@ -1,5 +1,7 @@
 //user
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
+import "../styles.css";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 const UserTable = ({ users, onDelete, onUpdate }) => {
   const [editableIndex, setEditableIndex] = useState(-1);

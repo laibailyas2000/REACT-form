@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import { Modal, Button, Form } from "react-bootstrap";
+import "../styles.css";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 const UserForm = ({ onSubmit }) => {
   const [show, setShow] = useState(false);
@@ -64,14 +66,14 @@ const UserForm = ({ onSubmit }) => {
     setErrors(newErrors);
     return Object.keys(newErrors).length === 0;
   };
-  //html code
+
   return (
-    <>
+    <div>
       <Button variant="primary" onClick={handleShow}>
         Add User
       </Button>
 
-      <Modal show={show} onHide={handleClose}>
+      <Modal show={show} onHide={handleClose} className="form-container">
         <Modal.Header closeButton>
           <Modal.Title>User Form</Modal.Title>
         </Modal.Header>
@@ -137,7 +139,7 @@ const UserForm = ({ onSubmit }) => {
           </Button>
         </Modal.Footer>
       </Modal>
-    </>
+    </div>
   );
 };
 
