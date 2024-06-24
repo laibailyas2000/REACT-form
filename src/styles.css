@@ -1,17 +1,8 @@
 /* styles.css */
 
-body {
+.form-body {
   background-image: url(https://t4.ftcdn.net/jpg/02/86/37/57/360_F_286375793_tMNCezCxZVJMzXVlunBoKI1JWP72cE9L.jpg);
   background-size: cover;
-}
-
-.form-container {
-  text-align: left;
-  border: 5px solid rgb(194, 189, 189);
-  background-color: rgb(35, 34, 34);
-  color: rgb(240, 32, 32);
-  width: 100%;
-  margin-bottom: -61px;
 }
 
 .modal-content {
@@ -25,8 +16,12 @@ body {
 .modal-body {
   position: relative;
 
-  background-color: rgb(92, 89, 89);
+  background-color: rgb(99 91 91);
 }
+.form-label {
+  color: white;
+}
+
 .modal-footer {
   background-color: #22e0ee;
   margin-top: 0%;
@@ -39,6 +34,25 @@ label {
   font-weight: bold;
 }
 
+.usertable-body {
+  background-image: url(https://t4.ftcdn.net/jpg/02/86/37/57/360_F_286375793_tMNCezCxZVJMzXVlunBoKI1JWP72cE9L.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-content: center;
+}
+h1 {
+  color: white;
+  margin-top: 98px;
+}
 .py-3.text-centre {
   text-align: center;
 }
@@ -70,7 +84,7 @@ button {
 }
 
 .btn.btn-primary {
-  margin-bottom: 50;
+  margin-bottom: -20px;
 }
 
 .btn-primary {

@@ -75,7 +75,7 @@ function App() {
         <Route
           path="/user"
           element={
-            <>
+            <div className="usertable-body">
               <h1>User Management</h1>
               <UserForm onSubmit={addUser} />
               <UserTable
@@ -83,7 +83,7 @@ function App() {
                 onDelete={deleteUser}
                 onUpdate={updateUser}
               />
-            </>
+            </div>
           }
         />
       </Routes>

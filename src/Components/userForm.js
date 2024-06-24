@@ -69,76 +69,78 @@ const UserForm = ({ onSubmit }) => {
 
   return (
     <div>
-      <Button variant="primary" onClick={handleShow}>
-        Add User
-      </Button>
+      <div className="form-body">
+        <Button variant="primary" onClick={handleShow}>
+          Add User
+        </Button>
 
-      <Modal show={show} onHide={handleClose} className="form-container">
-        <Modal.Header closeButton>
-          <Modal.Title>User Form</Modal.Title>
-        </Modal.Header>
-        <Modal.Body>
-          <Form onSubmit={handleSubmit}>
-            <Form.Group className="mb-3" controlId="formName">
-              <Form.Label>Name:</Form.Label>
-              <Form.Control
-                type="text"
-                name="name"
-                value={formData.name}
-                onChange={handleChange}
-                isInvalid={!!errors.name}
-              />
-              <Form.Control.Feedback type="invalid">
-                {errors.name}
-              </Form.Control.Feedback>
-            </Form.Group>
-            <Form.Group className="mb-3" controlId="formFName">
-              <Form.Label>Father's Name:</Form.Label>
-              <Form.Control
-                type="text"
-                name="fname"
-                value={formData.fname}
-                onChange={handleChange}
-                isInvalid={!!errors.fname}
-              />
-              <Form.Control.Feedback type="invalid">
-                {errors.fname}
-              </Form.Control.Feedback>
-            </Form.Group>
-            <Form.Group className="mb-3" controlId="formEmail">
-              <Form.Label>Email:</Form.Label>
-              <Form.Control
-                type="email"
-                name="email"
-                value={formData.email}
-                onChange={handleChange}
-                isInvalid={!!errors.email}
-              />
-              <Form.Control.Feedback type="invalid">
-                {errors.email}
-              </Form.Control.Feedback>
-            </Form.Group>
-            <Form.Group className="mb-3" controlId="formPhone">
-              <Form.Label>Phone Number:</Form.Label>
-              <Form.Control
-                type="number"
-                name="phone"
-                value={formData.phone}
-                onChange={handleChange}
-                isInvalid={!!errors.phone}
-              />
-              <Form.Control.Feedback type="invalid">
-                {errors.phone}
-              </Form.Control.Feedback>
-            </Form.Group>
-          </Form>
-        </Modal.Body>
-        <Modal.Footer>
-          <Button variant="dark" onClick={handleSubmit}>
-            Submit
-          </Button>
-        </Modal.Footer>
-      </Modal>
+        <Modal show={show} onHide={handleClose} className="form-container">
+          <Modal.Header closeButton>
+            <Modal.Title>User Form</Modal.Title>
+          </Modal.Header>
+          <Modal.Body>
+            <Form onSubmit={handleSubmit}>
+              <Form.Group className="mb-3" controlId="formName">
+                <Form.Label>Name:</Form.Label>
+                <Form.Control
+                  type="text"
+                  name="name"
+                  value={formData.name}
+                  onChange={handleChange}
+                  isInvalid={!!errors.name}
+                />
+                <Form.Control.Feedback type="invalid">
+                  {errors.name}
+                </Form.Control.Feedback>
+              </Form.Group>
+              <Form.Group className="mb-3" controlId="formFName">
+                <Form.Label>Father's Name:</Form.Label>
+                <Form.Control
+                  type="text"
+                  name="fname"
+                  value={formData.fname}
+                  onChange={handleChange}
+                  isInvalid={!!errors.fname}
+                />
+                <Form.Control.Feedback type="invalid">
+                  {errors.fname}
+                </Form.Control.Feedback>
+              </Form.Group>
+              <Form.Group className="mb-3" controlId="formEmail">
+                <Form.Label>Email:</Form.Label>
+                <Form.Control
+                  type="email"
+                  name="email"
+                  value={formData.email}
+                  onChange={handleChange}
+                  isInvalid={!!errors.email}
+                />
+                <Form.Control.Feedback type="invalid">
+                  {errors.email}
+                </Form.Control.Feedback>
+              </Form.Group>
+              <Form.Group className="mb-3" controlId="formPhone">
+                <Form.Label>Phone Number:</Form.Label>
+                <Form.Control
+                  type="number"
+                  name="phone"
+                  value={formData.phone}
+                  onChange={handleChange}
+                  isInvalid={!!errors.phone}
+                />
+                <Form.Control.Feedback type="invalid">
+                  {errors.phone}
+                </Form.Control.Feedback>
+              </Form.Group>
+            </Form>
+          </Modal.Body>
+          <Modal.Footer>
+            <Button variant="dark" onClick={handleSubmit}>
+              Submit
+            </Button>
+          </Modal.Footer>
+        </Modal>
+      </div>
     </div>
   );
 };
